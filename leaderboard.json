@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-07-08",
+  "players": [
+    {
+      "player": "Clayton",
+      "score": 3.0,
+      "streak": 0,
+      "avg": 3,
+      "rank": 1
+    },
+    {
+      "player": "Stone",
+      "score": 4.0,
+      "streak": 0,
+      "avg": 4,
+      "rank": 2
+    },
+    {
+      "player": "Trace",
+      "score": 4.143,
+      "streak": 0,
+      "avg": 4.14,
+      "rank": 3
+    },
+    {
+      "player": "Kaleb",
+      "score": 4.462,
+      "streak": 0,
+      "avg": 4.46,
+      "rank": 4
+    },
+    {
+      "player": "Noah",
+      "score": 4.611,
+      "streak": 0,
+      "avg": 4.61,
+      "rank": 5
+    },
+    {
+      "player": "Bess",
+      "score": 4.706,
+      "streak": 0,
+      "avg": 4.71,
+      "rank": 6
+    },
+    {
+      "player": "Chris",
+      "score": 4.8,
+      "streak": 0,
+      "avg": 4.8,
+      "rank": 7
+    },
+    {
+      "player": "Caiden",
+      "score": 5.0,
+      "streak": 0,
+      "avg": 5,
+      "rank": 8
+    },
+    {
+      "player": "Dallin",
+      "score": 5.3,
+      "streak": 0,
+      "avg": 5.3,
+      "rank": 9
+    }
+  ]
+}
