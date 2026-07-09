@@ -15,7 +15,7 @@ OUTPUT_PATH = Path(__file__).parent / "leaderboard.json"
 ROLLING_WINDOW_DAYS = 21
 STREAK_CAP = 21
 STREAK_WEIGHT = 0.06
-MISSED_DAY_PENALTY = 0.02
+MISSED_DAY_PENALTY = 0.03
 
 
 def load_games():

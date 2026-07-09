@@ -3,63 +3,63 @@
   "players": [
     {
       "player": "Clayton",
-      "score": 3.4,
+      "score": 3.6,
       "streak": 0,
       "avg": 3,
       "rank": 1
     },
     {
       "player": "Noah",
-      "score": 4.28,
+      "score": 4.29,
       "streak": 4,
       "avg": 4.5,
       "rank": 2
     },
     {
       "player": "Stone",
-      "score": 4.28,
+      "score": 4.42,
       "streak": 0,
       "avg": 4,
       "rank": 3
     },
     {
       "player": "Kaleb",
-      "score": 4.4,
+      "score": 4.46,
       "streak": 2,
       "avg": 4.4,
       "rank": 4
     },
     {
-      "player": "Trace",
-      "score": 4.423,
-      "streak": 0,
-      "avg": 4.14,
+      "player": "Bess",
+      "score": 4.504,
+      "streak": 4,
+      "avg": 4.68,
       "rank": 5
     },
     {
-      "player": "Bess",
-      "score": 4.484,
-      "streak": 4,
-      "avg": 4.68,
+      "player": "Trace",
+      "score": 4.563,
+      "streak": 0,
+      "avg": 4.14,
       "rank": 6
     },
     {
       "player": "Chris",
-      "score": 5.02,
+      "score": 5.13,
       "streak": 0,
       "avg": 4.8,
       "rank": 7
     },
     {
       "player": "Caiden",
-      "score": 5.32,
+      "score": 5.48,
       "streak": 0,
       "avg": 5,
       "rank": 8
     },
     {
       "player": "Dallin",
-      "score": 5.52,
+      "score": 5.63,
       "streak": 0,
       "avg": 5.3,
       "rank": 9
