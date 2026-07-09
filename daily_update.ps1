@@ -4,14 +4,17 @@
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
-& powershell -NoProfile -ExecutionPolicy Bypass -File "$PSScriptRoot\export_games.ps1"
-python "$PSScriptRoot\generate_leaderboard.py"
+$git = "C:\Program Files\Git\cmd\git.exe"
+$python = "C:\Users\ethan\AppData\Local\Microsoft\WindowsApps\python.exe"
 
-git add games.csv leaderboard.json
-$hasChanges = git status --porcelain
+& powershell -NoProfile -ExecutionPolicy Bypass -File "$PSScriptRoot\export_games.ps1"
+& $python "$PSScriptRoot\generate_leaderboard.py"
+
+& $git add games.csv leaderboard.json
+$hasChanges = & $git status --porcelain -- games.csv leaderboard.json
 if ($hasChanges) {
-    git commit -m "Daily leaderboard update: $(Get-Date -Format 'yyyy-MM-dd')"
-    git push
+    & $git commit -m "Daily leaderboard update: $(Get-Date -Format 'yyyy-MM-dd')"
+    & $git push
     Write-Output "Leaderboard updated and pushed."
 } else {
     Write-Output "No changes to publish today."
