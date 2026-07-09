@@ -15,6 +15,7 @@ OUTPUT_PATH = Path(__file__).parent / "leaderboard.json"
 ROLLING_WINDOW_DAYS = 21
 STREAK_CAP = 21
 STREAK_WEIGHT = 0.06
+MISSED_DAY_PENALTY = 0.02
 
 
 def load_games():
@@ -54,7 +55,17 @@ def compute_leaderboard(games, today=None):
                 streak += 1
                 cursor -= timedelta(days=1)
 
-        score = avg - (min(streak, STREAK_CAP) * STREAK_WEIGHT)
+        # Missed-day penalty: days with no game, within the rolling window but
+        # never before the player's first-ever logged game (don't penalize
+        # newcomers for weeks before they joined).
+        first_played = min(played_days)
+        penalty_start = max(window_start, first_played)
+        days_in_scope = (today - penalty_start).days + 1
+        days_played_in_scope = len({d for d in played_days if penalty_start <= d <= today})
+        missed_days = days_in_scope - days_played_in_scope
+        penalty = missed_days * MISSED_DAY_PENALTY
+
+        score = avg + penalty - (min(streak, STREAK_CAP) * STREAK_WEIGHT)
 
         results.append({
             "player": player,
