@@ -3,21 +3,21 @@
   "players": [
     {
       "player": "Noah",
-      "score": 3.89,
+      "score": 3.98,
       "streak": 9,
       "avg": 4.4,
       "rank": 1
     },
     {
       "player": "Bess",
-      "score": 4.19,
+      "score": 4.28,
       "streak": 9,
       "avg": 4.7,
       "rank": 2
     },
     {
       "player": "Stone",
-      "score": 4.36,
+      "score": 4.37,
       "streak": 1,
       "avg": 4,
       "rank": 3
@@ -31,21 +31,21 @@
     },
     {
       "player": "Kaleb",
-      "score": 4.816,
+      "score": 4.846,
       "streak": 3,
       "avg": 4.79,
       "rank": 5
     },
     {
       "player": "Chris",
-      "score": 5.189,
+      "score": 5.199,
       "streak": 1,
       "avg": 4.89,
       "rank": 6
     },
     {
       "player": "Dallin",
-      "score": 5.47,
+      "score": 5.48,
       "streak": 1,
       "avg": 5.2,
       "rank": 7
