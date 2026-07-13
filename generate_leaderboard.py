@@ -16,6 +16,7 @@ ROLLING_WINDOW_DAYS = 21
 STREAK_CAP = 21
 STREAK_WEIGHT = 0.06
 MISSED_DAY_PENALTY = 0.03
+MIN_GAMES_IN_WINDOW = 5
 
 
 def load_games():
@@ -39,8 +40,8 @@ def compute_leaderboard(games, today=None):
     for player, entries in by_player.items():
         # 21-day rolling average
         in_window = [g for d, g in entries if window_start <= d <= today]
-        if not in_window:
-            continue  # inactive in the rolling window -> hidden from leaderboard
+        if len(in_window) < MIN_GAMES_IN_WINDOW:
+            continue  # not enough games in the window to qualify for ranking
         avg = statistics.mean(in_window)
 
         # Played streak: consecutive calendar days with >=1 game, ending today or yesterday
