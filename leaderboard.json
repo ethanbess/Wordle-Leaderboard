@@ -1,40 +1,4 @@
 {
-  "generated_at": "2026-08-11",
-  "players": [
-    {
-      "player": "Chris",
-      "score": 4.283,
-      "streak": 0,
-      "avg": 3.83,
-      "rank": 1
-    },
-    {
-      "player": "Noah",
-      "score": 4.693,
-      "streak": 0,
-      "avg": 4.33,
-      "rank": 2
-    },
-    {
-      "player": "Dallin",
-      "score": 4.88,
-      "streak": 0,
-      "avg": 4.4,
-      "rank": 3
-    },
-    {
-      "player": "Bess",
-      "score": 4.916,
-      "streak": 0,
-      "avg": 4.56,
-      "rank": 4
-    },
-    {
-      "player": "Kaleb",
-      "score": 4.916,
-      "streak": 0,
-      "avg": 4.56,
-      "rank": 5
-    }
-  ]
+  "generated_at": "2026-08-17",
+  "players": []
 }
